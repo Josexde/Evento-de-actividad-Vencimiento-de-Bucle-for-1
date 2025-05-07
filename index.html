@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+    <script>
+        function imprimirNumeros() {
+            let resultado = document.getElementById("resultado");
+            let numeros = "";
+
+            for (let i = 1; i <= 100; i++) {
+                numeros += i + "<br>";
+            }
+
+            resultado.innerHTML = numeros;
+        }
+
+        window.onload = imprimirNumeros;
+    </script>
+</head>
+<body>
+    <h2>Números del 1 al 100:</h2>
+    <div id="resultado" style="font-size: 18px;"></div>
+</body>
+
+</head> 
+</html>
